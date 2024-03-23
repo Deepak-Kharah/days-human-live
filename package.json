@@ -1,8 +1,19 @@
 {
-  "name": "vanilla-ts",
+  "name": "days-human-live",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "author": {
+    "name": "Deepak Kharah"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Deepak-Kharah/days-human-live.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Deepak-Kharah/days-human-live/issues"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
