@@ -49,30 +49,15 @@ function generateCalendar(dob: dayjs.Dayjs) {
     for (let j = 0; j < 4; ++j) {
         const innerListFragment = document.createDocumentFragment();
 
-        for (let k = 0; k < 10; ++k) {
-            const singleLineFragment = document.createDocumentFragment();
-
-            for (let l = 0; l < 100; ++l) {
-                const box = document.createElement("div");
-                box.classList.add("box");
-                if (i < weeksGone) {
-                    box.classList.add("fill");
-                }
-                singleLineFragment.insertBefore(
-                    box,
-                    singleLineFragment.firstChild
-                );
-
-                ++i;
+        for (let l = 0; l < 1000; ++l) {
+            const box = document.createElement("div");
+            box.classList.add("box");
+            if (i < weeksGone) {
+                box.classList.add("fill");
             }
+            innerListFragment.insertBefore(box, innerListFragment.firstChild);
 
-            const singleLine = document.createElement("div");
-            singleLine.classList.add("singleline");
-            singleLine.appendChild(singleLineFragment);
-            innerListFragment.insertBefore(
-                singleLine,
-                innerListFragment.firstChild
-            );
+            ++i;
         }
 
         const innerList = document.createElement("div");

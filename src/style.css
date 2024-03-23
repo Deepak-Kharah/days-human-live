@@ -1,6 +1,8 @@
-h2 {
+h1 {
     color: white;
     text-align: center;
+    margin: 0;
+    margin-top: 2rem;
 }
 p {
     color: grey;
@@ -36,27 +38,31 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 #container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
     justify-content: center;
-    padding-bottom: 1rem;
-}
-
-.singleline {
-    display: flex;
+    padding-bottom: 3rem;
+    max-width: 100%;
+    row-gap: 10px;
 }
 
 .innerlist {
-    display: grid;
-    margin: 10px;
-    margin-bottom: 0px;
+    max-width: 63rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline: 1rem;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100dvh;
+    background: #22272e;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: #22272e;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 #years-diff {
@@ -67,4 +73,16 @@ body {
 #years-diff:hover {
     color: white;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1053px) {
+    .innerlist {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 463px) {
+    .innerlist {
+        max-width: 250px;
+    }
 }
