@@ -1,5 +1,5 @@
 {
-  "name": "days-human-live",
+  "name": "weeks-human-lives",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -9,10 +9,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Deepak-Kharah/days-human-live.git"
+    "url": "https://github.com/Deepak-Kharah/weeks-human-lives.git"
   },
   "bugs": {
-    "url": "https://github.com/Deepak-Kharah/days-human-live/issues"
+    "url": "https://github.com/Deepak-Kharah/weeks-human-lives/issues"
   },
   "scripts": {
     "dev": "vite",
